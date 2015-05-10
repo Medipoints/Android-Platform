@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+  
+    <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+     android:textSize="16sp"
+    android:text="Name"
+    />
+    <EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:id="@+id/edt_docname"
+    />
+   
+    <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:textSize="16sp"
+    android:text="Surname"
+    />
+<EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt_surname"
+   
+    android:textSize="16sp"
+    />
+
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:text="Education"
+    />
+<EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt_edu"
+    android:textSize="16sp"
+    />
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:text="Specialization"
+    />
+<EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt_spec"
+    android:textSize="16sp"
+    />
+
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:text="Experience"
+    />
+<EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt_exp"
+    android:inputType="number"
+    android:textSize="16sp"
+    />
+
+
+
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow >
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="160dp"
+    android:text="Latitude"  
+    android:textSize="16sp" 
+    android:singleLine="true"
+    
+   />
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="160dp"
+    android:text="Longitude"  
+    android:textSize="16sp"
+    android:singleLine="true"
+    
+   />
+</TableRow>
+
+ <TableRow >
+<TextView 
+    
+    android:layout_height="wrap_content"
+    android:layout_width="160dp"
+    android:textSize="14sp" 
+    android:singleLine="true"
+    android:id="@+id/txt_lat"
+    
+   />
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="160dp"
+    android:textSize="14sp"
+    android:singleLine="true"
+    android:id="@+id/txt_long"
+
+   />
+</TableRow>	
+  
+</TableLayout>
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:text="Full Address"/>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_addr"
+    />
+
+<TableLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+    <TableRow >
+<Button 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Show address"
+     android:textSize="16sp"
+    android:onClick="func_showaddr"
+    android:id="@+id/show_btn"
+   />
+    
+    
+   <Button 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Insert"
+     android:textSize="16sp"
+    android:onClick="func_insert"
+    android:id="@+id/insert"
+    />
+   <Button 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Show"
+     android:textSize="16sp"
+    android:onClick="func_insert"
+    android:id="@+id/show"
+    />
+   
+   </TableRow>
+   </TableLayout>
+
+</LinearLayout>
